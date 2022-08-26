@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
@@ -13,7 +13,87 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="grid grid--1x4">
+    <nav class="container nav collapsible">
+      <a class="nav__brand" href="/"><img src="images/mike.svg" alt="" /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item">
+          <a href="#">Works</a>
+        </li>
+        <li class="nav__item"><a href="#">Portfolio</a></li>
+        <li class="nav__item"><a href="#">Services</a></li>
+      </ul>
+      <a href="#" class="btn btn--primary btn--outline">Contact Me</a>
+    </nav>
+    <section class="block hero">
+      <div class="container2 grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Hey!I Am Michael Okello</h1>
+          <p class="hero__tagline">
+            Product designer and digital crative director working in design
+            field for 7 years so far, specialize user interface design.
+          </p>
+          <div class="hero-button">
+            <a
+              href="#"
+              mail-to:okellofrost@gmail.com
+              class="btn btn--accent btn--stretched"
+            >
+              Hire Me
+            </a>
+          </div>
+          <div class="hero-button">
+            <a href="#" class="btn btn--accent btn--stretched btn--outline">
+              Know More
+            </a>
+          </div>
+          <div class="block react-icon">
+            <div class="icon-container">
+              <img
+                class="icon"
+                src="./images/icons8-react-native-50.png"
+                alt="react"
+              />
+            </div>
+            <div>
+              <p>
+                Product Designer and Developer
+                <br />
+                specialized in UI/UX.
+              </p>
+            </div>
+          </div>
+        </header>
+
+        <div>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="
+                images/tuxedo-removebg-preview.webp 1x,
+                images/tuxedo@2x.webp               2x
+              "
+            />
+            <source
+              type="image/png"
+              srcset="
+                images/tuxedo-removebg-preview.png 1x,
+                images/tuxedo@2x.png               2x
+              "
+            />
+            <img
+              class="hero__image"
+              src="images/tuxedo-removebg-preview.png"
+              alt=""
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <div class="container grid grid--1x4">
       <div class="media">
         <div class="media__body">
           <h3 class="media__title1">7+</h3>
